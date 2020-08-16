@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Circo Intro</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/beige.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -16,8 +16,69 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Circo Intro</h1>
+					<h4>Schäffer Krisztián</h4>
+				</section>
+				<section>
+					<div>Back, far back, in the mists of time</div>
+					<div>when the world was very young...</div>
+					<br>
+					<video autoplay muted controls src="malacka.mov"></video>
+				</section>
+				<section>
+					<table>
+						<tr><th></th><th>Brains</th><th>Deep Learning</th></tr>
+						<tr><td>Representation</td><td>Sparse</td><td>Dense</td></tr>
+						<tr><td>Structure</td><td>Feedback loops</td><td>Layers (DAG)</td></tr>
+						<tr><td>Learning</td><td>Local</td><td>Global</td></tr>
+						<tr><td>Timing</td><td>Async</td><td>Synchronised</td></tr>
+					</table>
+				</section>
+				<section>
+					<h3>Actor Model</h3>
+					<ul>
+						<li>Physics inspired</li>
+						<li>Actors
+							<ul>
+								<li>share nothing</li>
+								<li>are stateful</li>
+								<li>and reactive</li>
+							</ul>
+						</li>
+						<li>Asynchronous messaging</li>
+						<li>Location transparency</li>
+						<li>The system grows from a spawn</li>
+					</ul>
+				</section>
+				<section>
+					<img src="julia.png" height=640>
+				</section>
+				<section>
+					<h4>Demo</h4>
+					<img src="demo.png">
+				</section>
+				<section>
+					<section>
+						CircoCore architecture
+						<img src="CircoCore-architecture.svg">
+					</section>
+					<section>
+						Alternative, Akka-like architecture
+						<img src="threadpool-actorscheduler.svg">
+					</section>
+				</section>
+				<section>
+					<h4>Infoton Optimization</h4>
+				</section>
+				<section>
+					<h4>Plans</h4>
+					<div>Stabilization, Documentation</div>
+					<div>Support async and blocking</div>
+					<div>Persistence</div>
+					<div>Higher level language (macro DSL)</div>
+					<div>Infoton Optimization Research</div>
+				</section>
 			</div>
 		</div>
 
